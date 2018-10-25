@@ -1,0 +1,40 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+div
+{
+    padding: 20px;
+}
+
+a.linkedin, a.linkedin:hover, a.linkedin:visited
+{
+    color: #0077B5; 
+}
+
+a.angellist, a.angellist:hover, a.angellist:visited
+{
+    color: #000000; 
+}
+
+a.twitter, a.twitter:hover, a.twitter:visited
+{
+    color: #1da1f2;
+}
+
+a.github, a.github:hover, a.github:visited
+{
+    color: #6e5494;
+}
+
+a.aboutme, a.aboutme:hover, a.aboutme:visited
+{
+    color: #00a98f;
+}
+
+a.facebook, a.facebook:hover, a.facebook:visited
+{
+    color: #3b5998;
+}
