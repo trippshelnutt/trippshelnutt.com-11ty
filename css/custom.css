@@ -9,6 +9,11 @@ div
     padding: 20px;
 }
 
+div.container
+{
+    padding: 0px;
+}
+
 a.linkedin, a.linkedin:hover, a.linkedin:visited
 {
     color: #0077B5; 
