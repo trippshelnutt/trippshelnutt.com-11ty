@@ -1,2 +1,2 @@
 # trippshelnutt.github.io
-My website
+Project for my website
