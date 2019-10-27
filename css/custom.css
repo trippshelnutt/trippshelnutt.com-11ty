@@ -1,89 +1,76 @@
+---
+---
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 body {
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 16px;
-    background-color: #283044;
-    color: #fff;
+    @apply text-white bg-gray-800 text-xl font-sans;
 }
 
 p {
-    margin-block-start: 0em;
+    @apply mb-4;
 }
 
-.container:after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100vh;
-    width: 100vw;
+.main-section:after {
+    @apply absolute top-0 left-0 h-screen w-screen bg-center bg-cover bg-no-repeat opacity-10 -z-1;
     background-image: url('../images/gasmask.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.1;
-    z-index: -1;
+    content: '';
 }
 
 .text {
-    position: absolute;
-    padding: 10px;
-    min-width: 300px;
+    @apply absolute p-2;
 }
 
 .links {
-    margin-block-end: 1em;
+    @apply mb-4;
 }
 
-a, a:hover, a:visited {
-    color: #fff;
+a {
+    @apply text-white underline;
 }
 
-a.linkedin, a.linkedin:hover, a.linkedin:visited {
-    color: #0077B5; 
+a.linkedin {
+    @apply text-linkedin;
 }
 
-a.angellist, a.angellist:hover, a.angellist:visited {
-    color: #000000; 
+a.angellist {
+    @apply text-angellist;
 }
 
-a.twitter, a.twitter:hover, a.twitter:visited {
-    color: #1da1f2;
+a.twitter {
+    @apply text-twitter;
 }
 
-a.github, a.github:hover, a.github:visited {
-    color: #6e5494;
+a.github {
+    @apply text-github;
 }
 
-a.aboutme, a.aboutme:hover, a.aboutme:visited {
-    color: #00a98f;
+a.aboutme {
+    @apply text-aboutme;
 }
 
-a.facebook, a.facebook:hover, a.facebook:visited {
-    color: #3b5998;
+a.facebook {
+    @apply text-facebook;
 }
 
-@media (min-width: 600px) {
-	body {
-		font-size: 2.5vw;
-	}
+@screen sm {
     .text {
-        top: 10vw;
-        left: 10vw;
-        width: 50vw;
+        @apply m-4
     }
 }
-@media (min-width: 900px) {
-	body {
-		font-size: 2vw;
-	}
+@screen md {
+    .text {
+        @apply m-16
+    }
 }
-@media (min-width: 1200px) {
-	body {
-		font-size: 1.5vw;
-	}
+@screen lg {
+    .text {
+        @apply m-32
+    }
 }
-@media (min-width: 1800px) {
-	body {
-		font-size: 1vw;
-	}
+@screen xl {
+    .text {
+        @apply m-32
+    }
 }

@@ -1,2 +1,21 @@
-# site settings
 title: Tripp Shelnutt
+
+plugins:
+    - jekyll-postcss
+    - jekyll-purgecss
+
+exclude:
+    - .gitignore
+    - README.md
+    - node_modules
+    - Gemfile
+    - Gemfile.lock
+    - package.json
+    - package-lock.json
+    - postcss.config.js
+    - purgecss.config.js
+    - tailwind.config.js
+
+collections:
+    jobs:
+        output: false
