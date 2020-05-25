@@ -12,7 +12,7 @@ p {
     @apply mb-4;
 }
 
-.main-section:after {
+main:after {
     @apply absolute top-0 left-0 h-screen w-screen bg-center bg-cover bg-no-repeat opacity-10 -z-1;
     background-image: url('../images/gasmask.jpg');
     content: '';
