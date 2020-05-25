@@ -34,24 +34,12 @@ a.linkedin {
     @apply text-linkedin;
 }
 
-a.angellist {
-    @apply text-angellist;
-}
-
 a.twitter {
     @apply text-twitter;
 }
 
 a.github {
     @apply text-github;
-}
-
-a.aboutme {
-    @apply text-aboutme;
-}
-
-a.facebook {
-    @apply text-facebook;
 }
 
 @screen sm {
