@@ -1,8 +1,6 @@
----
----
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     @apply text-white bg-gray-800 text-xl font-sans;
