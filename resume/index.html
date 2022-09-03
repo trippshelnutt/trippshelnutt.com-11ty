@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripp Shelnutt - Software Engineer</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/resume.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <hgroup>
+            <h1>Tripp Shelnutt</h1>
+            <h2>Software Engineer</h2>
+            <p>Download: <a href="resume-trippshelnutt.pdf" class="fa fa-file-pdf-o" target="_blank"></a></p>
+        </hgroup>
+    </header>
+
+    <main>
+
+        <section>
+            <h3>Overview</h3>
+            <p>Language agnostic software engineer with a love for both object-oriented programming and functional
+                programming. A self-motivated problem-solver that delivers business value as an individual contributor
+                and brings out the best in others as a team lead.</p>
+            <ul class="list-none">
+                <li><i class="fa fa-bullseye"></i>Focuses on meeting the needs of the users and the business.</li>
+                <li><i class="fa fa-money"></i>Follows agile methodologies to consistently deliver working software.</li>
+                <li><i class="fa fa-code"></i>Strives to write code that is simple and maintainable by other engineers.</li>
+                <li><i class="fa fa-cogs"></i>Combines skills, experience, and creativity to provide solutions to complex problems.</li>
+                <li><i class="fa fa-leaf"></i>Searches for leadership opportunities to encourage personal and organizational growth.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Tools</h3>
+            <p>Current - OOP, Design Patterns, SOLID, DDD, Agile, Scrum, .NET, C#, HTML, JavaScript, CSS, SQL, Visual
+                Studio, ReSharper/Rider, Visual Studio Code, Vim, Unit Testing, TDD, Git, GitHub, Azure DevOps, Azure,
+                Terraform, PowerShell</p>
+            <p>Previous - C++, Java, RTOS, 2D/3D Graphics, Linux, Multi-threading, Networking</p>
+            <p>Interests - FP, F#, TypeScript, ML, Python</p>
+        </section>
+
+        <section class="jobs">
+            <h3>Experience</h3>
+            {% for j in jobData %}
+            <p><a href="{{ j.company.url }}" target="_blank">{{ j.company.name }}</a> {{ j.company.notes }}</p>
+            {% for position in j.positions %}
+            <p class="job-position">{{ position.name }}. {{ position.start }} - {{ position.end }}.</p>
+            {% endfor %}
+            <p>{{ j.description }}</p>
+            <ul>
+                {% for highlight in j.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </section>
+
+        <section>
+            <h3>Education and Certifications</h3>
+            <p>
+                {% for e in educationData %}
+                <a href="{{ e.institution.url }}" target="_blank">{{ e.institution.name }}</a>, <a href="{{ e.degree.url }}" target="_blank">{{ e.degree.name }}</a>, {{ e.year}};
+                {% endfor %}
+            </p>
+        </section>
+
+        <section>
+            <h3>Volunteerism and Hobbies</h3>
+            <p>
+                {% for v in volunteerData %}
+                <a href="{{ v.organization.url }}" target="_blank">{{ v.organization.name }}</a>, {{ v.position }}, {{ v.date }};
+                {% endfor %}
+            </p>
+            <p>Hobbies include reading (mostly personal/professional development), conferences and user groups, coding for fun, computer and table-top gaming, Netflix binge-watching, cat wrangling, and beer brewing.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Please email requests for further information to: trippshelnutt AT outlook DOT com</p>
+    </footer>
+
+</body>
+
+</html>

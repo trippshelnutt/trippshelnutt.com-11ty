@@ -1,11 +1,13 @@
 {
     "name": "trippshelnutt.com",
     "scripts": {
-      "build": "npm-run-all build:css build:html",
-      "build:css": "postcss css/custom.css -o .tmp/css/custom.css",
+      "build": "npm-run-all build:custom-css build:resume-css build:html",
+      "build:custom-css": "postcss css/custom.css -o .tmp/css/custom.css",
+      "build:resume-css": "postcss css/resume.css -o .tmp/css/resume.css",
       "build:html": "eleventy",
-      "watch": "npm-run-all --parallel watch:css watch:html",
-      "watch:css": "postcss css/custom.css -o .tmp/css/custom.css --watch",
+      "watch": "npm-run-all --parallel watch:custom-css watch:resume-css watch:html",
+      "watch:custom-css": "postcss css/custom.css -o .tmp/css/custom.css --watch",
+      "watch:resume-css": "postcss css/resume.css -o .tmp/css/resume.css --watch",
       "watch:html": "eleventy --serve"
     },
     "dependencies": {

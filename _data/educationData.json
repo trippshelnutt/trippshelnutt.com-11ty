@@ -1,0 +1,24 @@
+[
+    {
+        "institution": {
+            "name": "Duke University",
+            "url": "https://www.duke.edu"
+        },
+        "degree": {
+            "name": "BS Computer Science",
+            "url": "https://www.cs.duke.edu"
+        },
+        "year": "1999"
+    },
+    {
+        "institution": {
+            "name": "Microsoft",
+            "url": "https://microsoft.com"
+        },
+        "degree": {
+            "name": "MCSD",
+            "url": "https://docs.microsoft.com/en-us/learn/certifications/mcsd-app-builder-certification/"
+        },
+        "year": "2020"
+    }
+]
