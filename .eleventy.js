@@ -3,7 +3,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setUseGitIgnore(false);
 
     eleventyConfig.addWatchTarget(".tmp/css/custom.css");
-    eleventyConfig.addPassthroughCopy({".tmp/css/custom.css": "css/custom.css"});
 
+    eleventyConfig.addPassthroughCopy({".tmp/css/custom.css": "css/custom.css"});
     eleventyConfig.addPassthroughCopy("favicon.ico");
+    eleventyConfig.addPassthroughCopy("images/*");
 }
