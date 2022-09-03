@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./resume/index.html"],
   theme: {
     opacity: {
       10: ".1",
