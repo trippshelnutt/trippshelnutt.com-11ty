@@ -45,8 +45,8 @@
         @apply -skew-y-3 text-indigo-300 hover:text-indigo-200;
     }
 
-    footer a.linkedin {
-        @apply text-linkedin scale-150;
+    a.linkedin {
+        @apply text-linkedin;
     }
 
     a.twitter {

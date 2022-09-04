@@ -4,6 +4,7 @@ module.exports = {
     "./uses/index.md",
     "./about/index.md",
     "./resume/index.html",
+    "./_includes/layout.njk",
   ],
   theme: {
     opacity: {
