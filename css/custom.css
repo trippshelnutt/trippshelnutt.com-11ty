@@ -5,11 +5,7 @@
 @layer base {
 
     body {
-        @apply text-white text-lg font-mono bg-center bg-cover bg-no-repeat bg-indigo-900 bg-gradient-to-b from-slate-900 to-indigo-900 flex flex-col justify-evenly p-4;
-    }
-
-    h1 {
-        @apply m-auto text-5xl text-center text-indigo-400;
+        @apply text-white text-lg font-mono h-full w-full min-h-screen bg-gradient-to-br from-slate-900 to-indigo-900 flex flex-col justify-start items-center p-4 gap-4;
     }
 
     a {
@@ -17,23 +13,27 @@
     }
 
     header {
-        @apply m-auto flex-none h-36 flex flex-row text-center gap-6;
+        @apply flex-none h-36 flex flex-row justify-center items-center gap-4;
     }
 
     header img {
-        @apply m-auto h-24 w-24 border-4 border-indigo-400 rounded-full;
+        @apply h-24 w-24 border-4 border-indigo-400 rounded-full;
+    }
+
+    header h1 {
+        @apply text-5xl text-indigo-400;
     }
 
     nav, footer {
-        @apply m-auto flex-none h-36 flex flex-row text-center justify-evenly gap-3;
+        @apply flex-none h-36 flex flex-row justify-center items-center gap-2;
     }
 
     nav span {
-        @apply m-auto text-indigo-400;
+        @apply text-indigo-400;
     }
 
     nav a, footer a {
-        @apply m-auto no-underline hover:underline hover:scale-110;
+        @apply no-underline hover:underline hover:scale-110;
     }
 
     nav a {
@@ -53,7 +53,7 @@
     }
 
     main {
-        @apply m-auto flex flex-col justify-start gap-8;
+        @apply flex flex-col justify-start gap-4;
     }
 
     section {
@@ -61,7 +61,6 @@
     }
 
     section p {
-        @apply scale-90;
     }
 
     section p i {
