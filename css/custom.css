@@ -5,7 +5,7 @@
 @layer base {
 
     body {
-        @apply text-white text-lg font-sans bg-center bg-cover bg-no-repeat bg-indigo-900 bg-gradient-to-b from-slate-900 to-indigo-900 flex flex-col justify-evenly p-4;
+        @apply text-white text-lg font-mono bg-center bg-cover bg-no-repeat bg-indigo-900 bg-gradient-to-b from-slate-900 to-indigo-900 flex flex-col justify-evenly p-4;
     }
 
     h1 {
@@ -54,6 +54,18 @@
 
     main {
         @apply m-auto flex flex-col justify-start gap-8;
+    }
+
+    section {
+        @apply flex flex-col justify-start gap-4;
+    }
+
+    section p {
+        @apply scale-90;
+    }
+
+    section p i {
+        @apply pr-4 text-amber-400 scale-75;
     }
 
     @screen sm {

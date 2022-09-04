@@ -1,8 +1,8 @@
 module.exports = {
   content: [
-    "./index.md",
-    "./uses/index.md",
-    "./about/index.md",
+    "./index.html",
+    "./uses/index.html",
+    "./about/index.html",
     "./resume/index.html",
     "./_includes/layout.njk",
   ],

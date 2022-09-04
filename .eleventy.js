@@ -11,6 +11,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     ".tmp/css/resume.css": "css/resume.css",
   });
+
+  eleventyConfig.addPassthroughCopy("css/fontawesome.min.css");
+  eleventyConfig.addPassthroughCopy("css/brands.min.css");
+  eleventyConfig.addPassthroughCopy("css/solid.min.css");
+  eleventyConfig.addPassthroughCopy("webfonts/*");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("images/*");
   eleventyConfig.addPassthroughCopy("resume/resume-trippshelnutt.pdf");
