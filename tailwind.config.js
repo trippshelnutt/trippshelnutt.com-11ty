@@ -1,8 +1,13 @@
 module.exports = {
-  content: ["./index.html", "./resume/index.html"],
+  content: [
+    "./index.md",
+    "./uses/index.md",
+    "./about/index.md",
+    "./resume/index.html",
+  ],
   theme: {
     opacity: {
-      10: ".1",
+      mask: ".03",
     },
     zIndex: {
       "-1": -1,

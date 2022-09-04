@@ -2,61 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply text-white bg-gray-800 text-xl font-sans;
-}
+@layer base {
 
-p {
-    @apply mb-4;
-}
-
-main:after {
-    @apply absolute top-0 left-0 h-screen w-screen bg-center bg-cover bg-no-repeat opacity-10 -z-1;
-    background-image: url('../images/gasmask.jpg');
-    content: '';
-}
-
-.text {
-    @apply absolute p-2;
-}
-
-.links {
-    @apply mb-4;
-}
-
-a {
-    @apply text-white underline;
-}
-
-a.linkedin {
-    @apply text-linkedin;
-}
-
-a.twitter {
-    @apply text-twitter;
-}
-
-a.github {
-    @apply text-github;
-}
-
-@screen sm {
-    .text {
-        @apply m-4
+    body {
+        @apply text-white bg-gray-800 text-lg font-sans flex flex-col justify-evenly p-4;
     }
-}
-@screen md {
-    .text {
-        @apply m-16
+
+    body:after {
+        @apply absolute top-0 left-0 h-screen w-screen bg-center bg-cover bg-no-repeat opacity-mask -z-1 bg-[url('/images/gasmask.jpg')];
+        content: '';
     }
-}
-@screen lg {
-    .text {
-        @apply m-32
+
+    h1 {
+        @apply m-auto text-4xl text-center;
     }
-}
-@screen xl {
-    .text {
-        @apply m-32
+
+    a {
+        @apply text-white underline;
+    }
+
+    header {
+        @apply m-auto flex-none h-24 flex;
+    }
+
+    header.home {
+        @apply h-48
+    }
+
+    nav, footer {
+        @apply m-auto flex-none h-24 flex flex-row text-center justify-evenly gap-4;
+    }
+
+    nav span {
+        @apply m-auto text-indigo-50;
+    }
+
+    nav a, footer a {
+        @apply m-auto no-underline hover:underline hover:scale-110;
+    }
+
+    nav a {
+        @apply -skew-y-3 text-indigo-300 hover:text-indigo-200;
+    }
+
+    footer a.linkedin {
+        @apply text-linkedin scale-150;
+    }
+
+    a.twitter {
+        @apply text-twitter;
+    }
+
+    a.github {
+        @apply text-github;
+    }
+
+    main {
+        @apply m-auto flex-auto flex flex-col justify-start gap-8;
+    }
+
+    @screen sm {
+        main {
+            @apply max-w-xl;
+        }
+    }
+
+    @screen md {
+        main {
+            @apply max-w-2xl;
+        }
+    }
+
+    @screen lg {
+        main {
+            @apply max-w-4xl;
+        }
+    }
+
+    @screen xl {
+        main {
+            @apply max-w-4xl;
+        }
+    }
+
+    @screen 2xl {
+        main {
+            @apply max-w-4xl;
+        }
     }
 }

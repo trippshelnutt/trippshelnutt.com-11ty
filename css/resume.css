@@ -4,89 +4,98 @@
 
 @layer base {
 
-	body {
-		@apply text-lg text-gray-700 bg-gradient-to-br from-indigo-200 to-purple-200 font-serif p-2;
-	}
+    body {
+        @apply text-lg text-gray-700 bg-gradient-to-br from-indigo-200 to-purple-200 font-serif p-2;
+    }
 
-	main {
-		@apply m-auto;
-	}
+    main {
+        @apply m-auto;
+    }
 
-	section {
-		@apply pt-4;
-	}
+    section {
+        @apply pt-4;
+    }
 
-	p.job-position {
-		@apply text-sm italic pt-2;
-	}
+    p.job-position {
+        @apply text-sm italic pt-2;
+    }
 
-	a {
-		@apply text-gray-900 underline;
-	}
+    a {
+        @apply text-gray-900 underline;
+    }
 
-	h1 {
-		@apply text-4xl text-center font-bold pt-4;
-	}
+    h1 {
+        @apply text-4xl text-center font-bold pt-4;
+    }
 
-	h2 {
-		@apply text-xl text-center font-bold pt-2;
-	}
+    h2 {
+        @apply text-xl text-center font-bold pt-2;
+    }
 
-	h3 {
-		@apply text-2xl text-center font-bold pt-4;
-	}
+    h3 {
+        @apply text-2xl text-center font-bold pt-4;
+    }
 
-	h1, h2, h3, h4, h5, h6 {
-		@apply text-gray-900;
-	}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-gray-900;
+    }
 
-	p {
-		@apply pt-4;
-	}
+    p {
+        @apply pt-4;
+    }
 
-	ul {
-		@apply list-disc pt-4;
-	}
+    ul {
+        @apply list-disc pt-4;
+    }
 
-	li {
-		@apply pt-2 mx-4;
-	}
+    li {
+        @apply pt-2 mx-4;
+    }
 
-	header {
-		@apply text-center text-gray-900;
-	}
+    header {
+        @apply text-center text-gray-900;
+    }
 
-	footer {
-		@apply text-center text-gray-900 text-sm italic pb-24;
-	}
+    footer {
+        @apply text-center text-gray-900 text-sm italic pb-24;
+    }
 
-	i {
-		@apply pr-4;
-	}
+    i {
+        @apply pr-4;
+    }
 
-	@screen sm {
-		main {
-			@apply max-w-xl;
-		}
-	}
-	@screen md {
-		main {
-			@apply max-w-2xl;
-		}
-	}
-	@screen lg {
-		main {
-			@apply max-w-4xl;
-		}
-	}
-	@screen xl {
-		main {
-			@apply max-w-5xl;
-		}
-	}
-	@screen 2xl {
-		main {
-			@apply max-w-6xl;
-		}
-	}
+    @screen sm {
+        main {
+            @apply max-w-xl;
+        }
+    }
+
+    @screen md {
+        main {
+            @apply max-w-2xl;
+        }
+    }
+
+    @screen lg {
+        main {
+            @apply max-w-4xl;
+        }
+    }
+
+    @screen xl {
+        main {
+            @apply max-w-5xl;
+        }
+    }
+
+    @screen 2xl {
+        main {
+            @apply max-w-6xl;
+        }
+    }
 }
