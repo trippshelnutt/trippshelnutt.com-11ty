@@ -5,16 +5,11 @@
 @layer base {
 
     body {
-        @apply text-white bg-gray-800 text-lg font-sans flex flex-col justify-evenly p-4;
-    }
-
-    body:after {
-        @apply absolute top-0 left-0 h-screen w-screen bg-center bg-cover bg-no-repeat opacity-mask -z-1 bg-[url('/images/gasmask.jpg')];
-        content: '';
+        @apply text-white text-lg font-sans bg-center bg-cover bg-no-repeat bg-indigo-900 bg-gradient-to-b from-slate-900 to-indigo-900 flex flex-col justify-evenly p-4;
     }
 
     h1 {
-        @apply m-auto text-5xl text-center;
+        @apply m-auto text-5xl text-center text-indigo-400;
     }
 
     a {
@@ -22,7 +17,11 @@
     }
 
     header {
-        @apply m-auto flex-none h-36 flex;
+        @apply m-auto flex-none h-36 flex flex-row text-center gap-6;
+    }
+
+    header img {
+        @apply m-auto h-24 w-24 border-4 border-indigo-400 rounded-full;
     }
 
     nav, footer {
@@ -30,7 +29,7 @@
     }
 
     nav span {
-        @apply m-auto text-indigo-50;
+        @apply m-auto text-indigo-400;
     }
 
     nav a, footer a {
@@ -38,7 +37,7 @@
     }
 
     nav a {
-        @apply -skew-y-3 text-indigo-300 hover:text-amber-400;
+        @apply -skew-y-3 text-fuchsia-300 hover:text-amber-400;
     }
 
     a.linkedin {
