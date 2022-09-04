@@ -1,6 +1,5 @@
 ---
 layout: layout.njk
-headerClass: home
 ---
 
 Hi! 👋

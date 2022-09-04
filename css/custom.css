@@ -14,23 +14,19 @@
     }
 
     h1 {
-        @apply m-auto text-4xl text-center;
+        @apply m-auto text-5xl text-center;
     }
 
     a {
-        @apply text-white underline;
+        @apply text-amber-400 underline;
     }
 
     header {
-        @apply m-auto flex-none h-24 flex;
-    }
-
-    header.home {
-        @apply h-48
+        @apply m-auto flex-none h-36 flex;
     }
 
     nav, footer {
-        @apply m-auto flex-none h-24 flex flex-row text-center justify-evenly gap-4;
+        @apply m-auto flex-none h-36 flex flex-row text-center justify-evenly gap-3;
     }
 
     nav span {
@@ -42,7 +38,7 @@
     }
 
     nav a {
-        @apply -skew-y-3 text-indigo-300 hover:text-indigo-200;
+        @apply -skew-y-3 text-indigo-300 hover:text-amber-400;
     }
 
     a.linkedin {
@@ -58,34 +54,54 @@
     }
 
     main {
-        @apply m-auto flex-auto flex flex-col justify-start gap-8;
+        @apply m-auto flex flex-col justify-start gap-8;
     }
 
     @screen sm {
+        body {
+            @apply text-lg;
+        }
+
+        main {
+            @apply max-w-lg;
+        }
+    }
+
+    @screen md {
+        body {
+            @apply text-xl;
+        }
+
         main {
             @apply max-w-xl;
         }
     }
 
-    @screen md {
-        main {
-            @apply max-w-2xl;
-        }
-    }
-
     @screen lg {
+        body {
+            @apply text-2xl;
+        }
+
         main {
-            @apply max-w-4xl;
+            @apply max-w-2xl gap-16;
         }
     }
 
     @screen xl {
+        body {
+            @apply text-3xl;
+        }
+
         main {
-            @apply max-w-4xl;
+            @apply max-w-3xl;
         }
     }
 
     @screen 2xl {
+        body {
+            @apply text-4xl;
+        }
+
         main {
             @apply max-w-4xl;
         }
