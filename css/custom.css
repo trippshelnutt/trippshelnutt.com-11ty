@@ -2,61 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply text-white bg-gray-800 text-xl font-sans;
-}
+@layer base {
 
-p {
-    @apply mb-4;
-}
-
-main:after {
-    @apply absolute top-0 left-0 h-screen w-screen bg-center bg-cover bg-no-repeat opacity-10 -z-1;
-    background-image: url('../images/gasmask.jpg');
-    content: '';
-}
-
-.text {
-    @apply absolute p-2;
-}
-
-.links {
-    @apply mb-4;
-}
-
-a {
-    @apply text-white underline;
-}
-
-a.linkedin {
-    @apply text-linkedin;
-}
-
-a.twitter {
-    @apply text-twitter;
-}
-
-a.github {
-    @apply text-github;
-}
-
-@screen sm {
-    .text {
-        @apply m-4
+    body {
+        @apply text-white text-lg font-sans bg-center bg-cover bg-no-repeat bg-indigo-900 bg-gradient-to-b from-slate-900 to-indigo-900 flex flex-col justify-evenly p-4;
     }
-}
-@screen md {
-    .text {
-        @apply m-16
+
+    h1 {
+        @apply m-auto text-5xl text-center text-indigo-400;
     }
-}
-@screen lg {
-    .text {
-        @apply m-32
+
+    a {
+        @apply text-amber-400 underline;
     }
-}
-@screen xl {
-    .text {
-        @apply m-32
+
+    header {
+        @apply m-auto flex-none h-36 flex flex-row text-center gap-6;
+    }
+
+    header img {
+        @apply m-auto h-24 w-24 border-4 border-indigo-400 rounded-full;
+    }
+
+    nav, footer {
+        @apply m-auto flex-none h-36 flex flex-row text-center justify-evenly gap-3;
+    }
+
+    nav span {
+        @apply m-auto text-indigo-400;
+    }
+
+    nav a, footer a {
+        @apply m-auto no-underline hover:underline hover:scale-110;
+    }
+
+    nav a {
+        @apply -skew-y-3 text-fuchsia-300 hover:text-amber-400;
+    }
+
+    a.linkedin {
+        @apply text-linkedin;
+    }
+
+    a.twitter {
+        @apply text-twitter;
+    }
+
+    a.github {
+        @apply text-github;
+    }
+
+    main {
+        @apply m-auto flex flex-col justify-start gap-8;
+    }
+
+    @screen sm {
+        body {
+            @apply text-lg;
+        }
+
+        main {
+            @apply max-w-lg;
+        }
+    }
+
+    @screen md {
+        body {
+            @apply text-xl;
+        }
+
+        main {
+            @apply max-w-xl;
+        }
+    }
+
+    @screen lg {
+        body {
+            @apply text-2xl;
+        }
+
+        main {
+            @apply max-w-2xl gap-16;
+        }
+    }
+
+    @screen xl {
+        body {
+            @apply text-3xl;
+        }
+
+        main {
+            @apply max-w-3xl;
+        }
+    }
+
+    @screen 2xl {
+        body {
+            @apply text-4xl;
+        }
+
+        main {
+            @apply max-w-4xl;
+        }
     }
 }
