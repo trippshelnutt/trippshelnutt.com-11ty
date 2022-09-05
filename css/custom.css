@@ -63,7 +63,7 @@
     section p {
     }
 
-    section p i {
+    section i {
         @apply pr-4 text-amber-400 scale-75;
     }
 
