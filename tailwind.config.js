@@ -1,10 +1,11 @@
 module.exports = {
   content: [
     "./index.html",
-    "./uses/index.html",
-    "./about/index.html",
+    "./blog/index.html",
     "./resume/index.html",
     "./resume/printer-friendly.html",
+    "./uses/index.html",
+    "./about/index.html",
     "./_includes/layout.njk",
   ],
   theme: {
