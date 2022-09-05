@@ -5,7 +5,7 @@
 @layer base {
 
     body {
-        @apply text-white text-lg font-mono h-full w-full min-h-screen bg-gradient-to-br from-slate-900 to-indigo-900 flex flex-col justify-start items-center p-4 gap-4;
+        @apply text-white text-lg lg:text-2xl font-mono h-full w-full min-h-screen bg-gradient-to-br from-slate-900 to-indigo-900 flex flex-col justify-start items-center p-4 gap-4;
     }
 
     a {
@@ -21,10 +21,16 @@
     }
 
     header h1 {
-        @apply text-5xl text-indigo-400;
+        @apply text-4xl lg:text-6xl text-indigo-400;
     }
 
-    nav, footer {
+    h2,
+    h3 {
+        @apply text-2xl lg:text-4xl underline text-fuchsia-300 -skew-y-2;
+    }
+
+    nav,
+    footer {
         @apply flex-none h-36 flex flex-row justify-center items-center gap-2;
     }
 
@@ -32,12 +38,13 @@
         @apply text-indigo-400;
     }
 
-    nav a, footer a {
+    nav a,
+    footer a {
         @apply no-underline hover:underline hover:scale-110;
     }
 
     nav a {
-        @apply -skew-y-3 text-fuchsia-300 hover:text-amber-400;
+        @apply -skew-y-2 text-fuchsia-300 hover:text-amber-400;
     }
 
     a.linkedin {
@@ -53,67 +60,26 @@
     }
 
     main {
-        @apply flex flex-col justify-start gap-4;
+        @apply max-w-2xl lg:max-w-4xl flex flex-col justify-start gap-8;
     }
 
     section {
         @apply flex flex-col justify-start gap-4;
     }
 
-    section p {
-    }
+    section p {}
 
     section i {
         @apply pr-4 text-amber-400 scale-75;
     }
 
-    @screen sm {
-        body {
-            @apply text-lg;
-        }
+    @screen sm {}
 
-        main {
-            @apply max-w-lg;
-        }
-    }
+    @screen md {}
 
-    @screen md {
-        body {
-            @apply text-xl;
-        }
+    @screen lg {}
 
-        main {
-            @apply max-w-xl;
-        }
-    }
+    @screen xl {}
 
-    @screen lg {
-        body {
-            @apply text-2xl;
-        }
-
-        main {
-            @apply max-w-2xl gap-16;
-        }
-    }
-
-    @screen xl {
-        body {
-            @apply text-3xl;
-        }
-
-        main {
-            @apply max-w-3xl;
-        }
-    }
-
-    @screen 2xl {
-        body {
-            @apply text-4xl;
-        }
-
-        main {
-            @apply max-w-4xl;
-        }
-    }
+    @screen 2xl {}
 }

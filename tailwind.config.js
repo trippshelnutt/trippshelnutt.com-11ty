@@ -4,7 +4,7 @@ module.exports = {
     "./uses/index.html",
     "./about/index.html",
     "./resume/index.html",
-    "./resume/print-friendly.html",
+    "./resume/printer-friendly.html",
     "./_includes/layout.njk",
   ],
   theme: {
