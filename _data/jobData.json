@@ -1,9 +1,9 @@
 [
     {
         "company": {
-            "name": "Qualtrax",
-            "url": "https://www.qualtrax.com",
-            "notes": "(An Ideagen PLC Company)"
+            "name": "Ideagen",
+            "url": "https://www.ideagen.com",
+            "notes": "(acquired Qualtrax March 2021)"
         },
         "positions": [
             {
@@ -12,11 +12,12 @@
                 "end": "Present"
             }
         ],
-        "description": "Served as the leader for a development team of product engineers to maintain legacy QMS software. Daily activities included development, pairing, mentoring, reviewing code, and facilitating regular agile ceremonies focused on continuous improvement of the team.",
+        "description": "Served as the lead developer for a team of product engineers focused on modernizing quality management applications. Daily activities included development, pairing, mentoring, code reviews, and facilitating agile ceremonies, retrospectives, and post-mortems.",
         "highlights": [
-            "Conducted research and refactoring for a new multi-tenant architecture that reduced hosting costs by enabling the application to use shared resources in Azure.",
-            "Integrated SAML SSO component into the application which enabled customers to use their own identity providers for a seamless login experience.",
-            "Regularly facilitated book clubs and community activities to strengthen shared engineering principles and share new patterns and practices across vertical teams."
+            "Reduced Azure hosting costs by 60%",
+            "Increased application deployment frequency from quarterly to weekly",
+            "Implemented SSO, SCIM, and JIT user-provisioning features",
+            "Strengthened shared engineering principles through regular community activities"
         ]
     },
     {
@@ -32,11 +33,12 @@
                 "end": "Jan 2018"
             }
         ],
-        "description": "Collaborated with other developers on an agile team to enhance and expand company’s software portfolio for clients in various industries.",
+        "description": "Collaborated with other developers on an agile team to enhance and expand the company's software portfolio for clients in various industries.",
         "highlights": [
-            "Architected reusable, multi-tenant web application using ASP.NET MVC and Entity Framework to enable teachers to track student interventions and learning progress.",
-            "Streamlined workflow of practice management software to increase efficiency in physician offices, decrease errors in data entry, and improve patient experience.",
-            "Mentored other team members to improve software development and release processes and increase overall development efficiency."
+            "Architected template for reusable, multi-tenant web applications",
+            "Introduced automated testing processes to speed up development time",
+            "Automated release process to increase deployment speed and consistency",
+            "Streamlined physician workflow using OCR and RFID to increase practice efficiency"
         ]
     },
     {
@@ -57,81 +59,12 @@
                 "end": "Jan 2013"
             }
         ],
-        "description": "Worked with other developers in agile teams to improve and expand the company’s existing library of manufacturing applications.",
+        "description": "Worked with other developers in agile teams to improve and expand the company's existing library of manufacturing applications.",
         "highlights": [
-            "Led software architecture of several projects including a custom service bus, an efficiency and production tracking system, and a proprietary manufacturing process.",
-            "Researched and evaluated new technologies for use in application development and led several presentations to encourage technical growth within the group.",
-            "Coordinated efforts with external groups to integrate shop floor systems into HMI and order management applications on the manufacturing floor."
-        ]
-    },
-    {
-        "company": {
-            "name": "Harrison Audio",
-            "url": "https://harrisonconsoles.com/",
-            "notes": ""
-        },
-        "positions": [
-            {
-                "name": "Software Developer",
-                "start": "Apr 2005",
-                "end": "Dec 2007"
-            }
-        ],
-        "description": "Collaborated with other developers to maintain and enhance the company's existing software for control and automation of audio mixing consoles. Worked on a variety of projects dealing with OpenGL-based graphics and networking in a real-time, multi-threaded programming environment.",
-        "highlights": [
-            "Designed a networking interface module to communicate with 3rd party audio workstation software to integrate existing console hardware with other software vendors.",
-            "Led major refactoring of DSP software for use with shared memory in a real-time operating system which greatly increased efficiency and maintainability.",
-            "Simplified and consolidated scripts for configuration of net-bootable OS servers for ease of installation in production and on-site updating."
-        ]
-    },
-    {
-        "company": {
-            "name": "Intellisys",
-            "url": "",
-            "notes": ""
-        },
-        "positions": [
-            {
-                "name": "Application Engineer",
-                "start": "May 2003",
-                "end": "Mar 2005"
-            },
-            {
-                "name": "Policy Programmer",
-                "start": "Feb 2003",
-                "end": "May 2003"
-            }
-        ],
-        "description": "Worked on a team to develop a UI for the company's web-based attendance management software and other projects to improve the company's web presence and internal productivity.",
-        "highlights": [
-            "Implemented custom composite controls which greatly improved the usability, efficiency, and look of the UI for the company's flagship product.",
-            "Designed an employee access site to be easily customizable by IT departments at large companies.",
-            "Redesigned company's primary and support websites to increase sales and streamline support for new product releases."
-        ]
-    },
-    {
-        "company": {
-            "name": "MAK",
-            "url": "https://www.mak.com/",
-            "notes": ""
-        },
-        "positions": [
-            {
-                "name": "Software Engineer",
-                "start": "Jun 2001",
-                "end": "Sep 2002"
-            },
-            {
-                "name": "Support Consultant",
-                "start": "Feb 2000",
-                "end": "Jun 2001"
-            }
-        ],
-        "description": "Primary responsibilities included the development of the new UI and API for the company's 2D military visualization and AI simulation toolkit.",
-        "highlights": [
-            "Applied knowledge of toolkit design to improve API while simultaneously leveraging pre-existing code in a cost effective manner.",
-            "Designed and implemented new UI for existing 2D visualization application using a cross-platform development toolkit.",
-            "Coordinated efforts with a research team to incorporate new user interface concepts into the base product."
+            "Developed a patented, robotic manufacturing process",
+            "Architected a custom service bus to reduce systems integration development",
+            "Led major refactoring of applications to integrate with a new shop floor system",
+            "Encouraged technical growth within the group by facilitating lunch-and-learns"
         ]
     }
 ]
