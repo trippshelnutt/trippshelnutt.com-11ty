@@ -24,25 +24,16 @@
 
         <section>
             <h3>Overview</h3>
-            <p>Language agnostic software engineer with a love for both object-oriented programming and functional
-                programming. A self-motivated problem-solver that delivers business value as an individual contributor
-                and brings out the best in others as a team lead.</p>
+            <p>Language agnostic software engineer with a love for object-oriented and functional
+                programming. A self-motivated problem-solver that delivers business value as an individual
+                contributor and brings out the best in others as a team lead.</p>
             <ul class="list-none">
-                <li><i class="fa-solid fa-bullseye"></i>Focuses on meeting the needs of the users and the business.</li>
-                <li><i class="fa-solid fa-sack-dollar"></i>Follows agile methodologies to consistently deliver working software.</li>
-                <li><i class="fa-solid fa-code"></i>Strives to write code that is simple and maintainable by other engineers.</li>
-                <li><i class="fa-solid fa-cogs"></i>Combines skills, experience, and creativity to provide solutions to complex problems.</li>
-                <li><i class="fa-solid fa-leaf"></i>Searches for leadership opportunities to encourage personal and organizational growth.</li>
+                <li><i class="fa-solid fa-bullseye"></i>Focuses on meeting the needs of the users and the business</li>
+                <li><i class="fa-solid fa-sack-dollar"></i>Follows agile methodologies to deliver working software consistently</li>
+                <li><i class="fa-solid fa-code"></i>Strives to write code that is simple and maintainable by other engineers</li>
+                <li><i class="fa-solid fa-cogs"></i>Combines skills, experience, and creativity to provide solutions to complex problems</li>
+                <li><i class="fa-solid fa-leaf"></i>Searches for leadership opportunities to encourage personal and organizational growth</li>
             </ul>
-        </section>
-
-        <section>
-            <h3>Tools</h3>
-            <p>Current - OOP, Design Patterns, SOLID, DDD, Agile, Scrum, .NET, C#, HTML, JavaScript, CSS, SQL, Visual
-                Studio, ReSharper/Rider, Visual Studio Code, Vim, Unit Testing, TDD, Git, GitHub, Azure DevOps, Azure,
-                Terraform, PowerShell</p>
-            <p>Previous - C++, Java, RTOS, 2D/3D Graphics, Linux, Multi-threading, Networking</p>
-            <p>Interests - FP, F#, TypeScript, ML, Python</p>
         </section>
 
         <section class="jobs">
@@ -62,22 +53,38 @@
         </section>
 
         <section>
+            <h3>Tools</h3>
+            <p>Current - OOP, Design Patterns, SOLID, DDD, Agile, Scrum, .NET, C#, HTML, JavaScript, CSS, SQL, Visual
+                Studio, ReSharper/Rider, Visual Studio Code, Vim, Unit Testing, TDD, Git, GitHub, Azure DevOps, Azure,
+                Terraform, PowerShell</p>
+            <p>Previous - C++, Java, RTOS, 2D/3D Graphics, Linux, Multi-threading, Networking</p>
+            <p>Interests - FP, F#, TypeScript, ML, Python</p>
+        </section>
+
+        <section>
             <h3>Education and Certifications</h3>
             <p>
                 {% for e in educationData %}
-                <a href="{{ e.institution.url }}" target="_blank">{{ e.institution.name }}</a>, <a href="{{ e.degree.url }}" target="_blank">{{ e.degree.name }}</a>, {{ e.year}};
+                <p><a href="{{ e.institution.url }}" target="_blank">{{ e.institution.name }}</a>, <a href="{{ e.degree.url }}" target="_blank">{{ e.degree.name }}</a>, {{ e.year}}</p>
                 {% endfor %}
             </p>
         </section>
 
         <section>
-            <h3>Volunteerism and Hobbies</h3>
+            <h3>Volunteerism</h3>
             <p>
                 {% for v in volunteerData %}
-                <a href="{{ v.organization.url }}" target="_blank">{{ v.organization.name }}</a>, {{ v.position }}, {{ v.date }};
+                <p><a href="{{ v.organization.url }}" target="_blank">{{ v.organization.name }}</a>, {{ v.position }}, {{ v.date }}</p>
                 {% endfor %}
             </p>
-            <p>Hobbies include reading (mostly personal/professional development), conferences and user groups, coding for fun, computer and table-top gaming, Netflix binge-watching, cat wrangling, and beer brewing.</p>
+        </section>
+
+        <section>
+            <h3>Hobbies and Books</h3>
+            <p>My hobbies include reading (primarily personal/professional development), attending
+                conferences and user groups, coding for fun, computer and tabletop gaming, and cat wrangling.
+                My favorite books include The Pragmatic Programmer, Modern Software Engineering, Kill it
+                with Fire, The Goal, and Neuromancer.</p>
         </section>
 
     </main>
